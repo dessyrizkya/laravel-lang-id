@@ -9,3 +9,16 @@ php artisan lang:publish
 ```
 2. Download folder `id` di repository ini
 3. Pindahkan `id` ke `lang`
+4. Untuk mengubah bahasa, bisa dengan mengedit langung file `config/app.php`
+```
+'locale' => 'id'
+```
+atau edit di .env
+```
+APP_LOCALE=id
+```
+kemudian edit di `config/app.php`
+```
+'locale' => env('APP_LOCALE', 'id')
+```
+
